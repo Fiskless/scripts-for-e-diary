@@ -28,7 +28,7 @@ def create_commendation(schoolkid_name, lesson, year_of_study, group_letter):
     commendation_list=['Молодец!',
                        'Отлично!',
                        'Хорошо!',
-                       ' Гораздо лучше, чем я ожидал!',
+                       'Гораздо лучше, чем я ожидал!',
                        'Ты меня приятно удивил!',
                        'Ты, как всегда, точен!',
                        'Талантливо!','Потрясающе!',
@@ -36,14 +36,11 @@ def create_commendation(schoolkid_name, lesson, year_of_study, group_letter):
                        'Так держать!',
                        'Здорово!',
                        'Я тобой горжусь!',
+                       'Ты растешь над собой!',
+                       'Ты сегодня прыгнул выше головы!',
+                       'Я вижу, как ты стараешься!',
+                       'Мы с тобой не зря поработали!',
+                       'Ты многое сделал, я это вижу!',
                        'Ты растешь над собой!']
     commendation_text = random.choice(commendation_list)
     Commendation.objects.create(text=commendation_text, created=lessons.date, schoolkid=child, subject=lessons.subject, teacher=lessons.teacher)
-
-
-
-# python manage.py runserver 127.0.0.1:8000
-
-# python manage.py shell
-
-# Миронов Валерий
