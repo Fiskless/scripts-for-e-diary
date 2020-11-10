@@ -24,10 +24,7 @@
     * запустите функцию, которая изменяет оценки. Для этого в Shell запишите `fix_marks(schoolkid_name)`, где schoolkid name - ваше имя. 
     
         Пример записи: `fix_marks('Фролов Иван')`. 
-    
-        **Важно! У вас может появиться ошибка: `datacenter.models.Schoolkid.DoesNotExist: Schoolkid matching query does not exist.` 
-        Это значит, что вы ввели неправильно фамилию и имя. 
-        Если введете пустую строку вместо имени, то также появится ошибка: `datacenter.models.Schoolkid.MultipleObjectsReturned: get() returned more than one Schoolkid -- it returned 990!`**
+          
     * запустите функцию, которая удаляет замечания от учителей. Для этого в Shell запишите `remove_chastisements(schoolkid_name)`, где schoolkid name - ваше имя. 
     
         Пример записи: `remove_chastisements('Фролов Иван')`;
@@ -36,11 +33,7 @@
     где schoolkid name - ваше имя, а lesson - название предмета, по которому вы хотите добавить рекоммендацию, 
     year_of_study - ваш год обучения, group_letter - литера вашего класса. 
         
-        Пример записи: `create_commendation('Фролов Иван', 'Математика', 6, 'А')`. 
-        
-        **Важно! У вас может появиться ошибка: `AttributeError: 'NoneType' object has no attribute 'date'`. 
-        Это значит, что вы неправильно ввлеи один из параметров: название предмета, год обучения или литеру класса.**
-
+        Пример записи: `create_commendation('Фролов Иван', 'Математика', 6, 'А')`.
 5. Наслаждайтесь отличными оценками и положительными рекомендациями.
 
 
@@ -49,3 +42,4 @@
 ## Цели проекта
 
 Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
+
